@@ -1,0 +1,150 @@
+﻿/*- - - - - - - - - - - - - - - - - - - - 
+	PROPERTY ITEM
+- - - - - - - - - - - - - - - - - - - - */
+
+.property-item .info-1 {
+    position: relative;
+    z-index: 100;
+}
+
+.property-item .for-sale, .property-item .for-rent, .property-item .price {
+    background: #5CBE6D;
+    color: #fff;
+    padding: 2px 10px 2px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+}
+
+.for-sale {
+    background: #5CBE6D;
+    color: #fff;
+    padding: 2px 10px 2px 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.property-item .for-rent, .for-rent {
+    background: #5CBE6D;
+}
+
+.property-item img {
+    margin-top: -28px;
+}
+
+.property-item {
+    margin-bottom: 30px;
+}
+
+    .property-item .price {
+        background: #eee;
+        color: #333;
+        float: right;
+        font-weight: normal;
+    }
+
+    .property-item .info {
+        padding: 20px;
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%,rgba(97, 210, 214, 1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+    }
+
+    .property-item h4 {
+        margin: 0;
+    }
+
+    .property-item .features {
+        border-top: solid 1px #ddd;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+        .property-item .features span {
+            padding-left: 20px;
+        }
+
+        .property-item .features .bed {
+            background: url(/img/bed.png) left center no-repeat;
+            float: right;
+            margin-right: 5px;
+        }
+
+        .property-item .features .bath {
+            background: url(/img/bth.jpg) left center no-repeat;
+            float: right;
+            margin-left: 20px;
+        }
+
+        .property-item .features .area {
+            /*background: url(../img/icon-home.png) left center no-repeat;*/
+        }
+
+.property-for-sale .info {
+    border: solid 1px #ddd;
+    border-bottom: solid 2px #5CBE6D;
+}
+
+.property-for-rent .info {
+    border: solid 1px #ddd;
+    border-bottom: solid 2px #61D2D6;
+}
+
+
+/*- - - - - - - - - - - - - - - - - - - - 
+	SINGLE PROPERTY
+- - - - - - - - - - - - - - - - - - - - */
+.single-property .price {
+    display: block;
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+    color: #42A0FF;
+}
+
+.agent-tab span {
+    display: block;
+}
+
+.agent-tab img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.agent-tab .info {
+    float: left;
+    margin-left: 20px;
+}
+
+.feature-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+    .feature-list li {
+        list-style: none;
+        border-bottom: solid 1px #ddd;
+        padding: 3px 0 3px 0;
+    }
+
+        .feature-list li:before {
+            list-style: none;
+            color: #ccc;
+            content: open-quote;
+            font-size: 14px;
+            line-height: 0.1em;
+            margin-right: 10px;
+            font-family: FontAwesome;
+            content: "\f046";
+        }
+.img-hover {
+    display: inline;
+    height: 200px;
+    width: 100%;
+}

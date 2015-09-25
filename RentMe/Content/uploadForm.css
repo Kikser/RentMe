@@ -1,0 +1,159 @@
+﻿.web_dialog_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    opacity: .60;
+    filter: alpha(opacity=15);
+    -moz-opacity: .15;
+    z-index: 101;
+    display: none;
+}
+
+.web_dialog {
+    display: none;
+    position: fixed;
+    width: 65%;
+    height: 500px;
+    top: 25%;
+    left: 22%;
+    margin-top: -96px;
+    padding: 0px;
+    z-index: 102;
+    font-family: Verdana;
+    font-size: 10pt;
+    background-color:#14B190;
+
+
+}
+
+.web_dialog_title {
+    /*border-bottom: solid 2px #60CCB3;
+    background-color: #60CCB3;*/
+    padding: 4px;
+    color: White;
+    font-weight: bold;
+}
+
+    .web_dialog_title a {
+        color: White;
+        text-decoration: none;
+    }
+
+/*This is for button upload*/
+.btn {
+  width: 50px;
+  height: 50px;
+  background-color: #14B190;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.btn.active {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.icon-bg {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  left: -36px;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.icon-bg.active {
+  bottom: 440px;
+  left: 704px;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.icon {
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.icon::before {
+  content: "";
+    background-color: #fff;
+    height: 24px;
+    width: 4px;
+    top: -3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.nav-left {
+    position: absolute;
+    top: 8%;
+    right: 2%;
+}

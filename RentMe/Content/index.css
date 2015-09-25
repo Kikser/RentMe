@@ -1,0 +1,94 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    background: transparent url(/images/bgbody.jpg) repeat top left;
+}
+
+.info a.back {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    text-decoration: none;
+    color: #603d05;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: bold;
+}
+
+    .info a.back:hover {
+        color: #000;
+    }
+
+.accom_form {
+    width: 27%;
+    margin: 3%;
+    float: left;
+}
+
+.apartment_wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    min-height: 900px;
+    box-shadow: 0px 9px 0px 0px rgba(255, 255, 255, 0), 0px -9px 0px 0px rgba(255, 255, 255, 0), 10px 0px 30px 0px rgba(0, 0, 0, 0.15), -10px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    right: 200px;
+    list-style: none;
+    z-index: 999999;
+}
+
+    ul#navigation li {
+        display: inline;
+        float: left;
+        width: 100px;
+        margin-left: 1px;
+    }
+
+        ul#navigation li a {
+            display: block;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #fff;
+            float: left;
+            width: 100px;
+            height: 35px;
+            color: #603d05;
+            background: transparent url(/images/item.png) no-repeat bottom right;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 80px;
+            margin-top: -40px;
+            cursor: pointer;
+        }
+
+            ul#navigation li a:hover {
+            }
+
+.log {
+    position: fixed;
+    top: 0%;
+    left: 10%;
+    list-style: none;
+    z-index: 999999;
+    margin: 0px;
+    padding: 0px;
+}
+
+.user_in {
+    left: 5%;
+}

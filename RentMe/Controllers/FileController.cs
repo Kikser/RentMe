@@ -1,0 +1,23 @@
+﻿using RentMe.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace RentMe.Controllers
+{
+    public class FileController : Controller
+    {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        //private RentMeDBContext db = new RentMeDBContext();
+        // GET: File
+        public ActionResult Index(int id)
+        {
+            var fileToRetrieve = db.Images.Find(id);
+
+            return File(fileToRetrieve.Content, fileToRetrieve.ContentType);
+        }
+    }
+}
