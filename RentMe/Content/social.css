@@ -1,0 +1,91 @@
+﻿#buttonbg {
+  width: 260px;
+  margin: 10px 20px;
+  padding: 0;
+  position: absolute;
+  left: 0%;
+}
+
+#buttonbg li {
+  cursor: pointer;
+  color: #fff;
+  height: 48px;
+  position: relative;
+  list-style-type: none;
+}
+#buttonbg .icon {
+  background: #D91E76 url('http://2.bp.blogspot.com/-JKB0aVYaIW0/UC-oBl8NXxI/AAAAAAAAEYA/IbgyikdkM5A/s1600/blsocial12.png') 0 0 no-repeat;
+  background-color: rgba(217, 30, 118, .42);
+  border-radius: 30px;
+  display: block;
+  color: #fff;
+  float: none;
+  height: 48px;
+  line-height: 48px;
+  margin: 5px 0;
+  position: relative;
+  text-align: left;
+  text-indent: 90px;
+  text-shadow: #333 0 1px 0;
+  white-space: nowrap;
+  width: 48px;
+  z-index: 5;
+  -webkit-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+  -moz-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+  -o-transition: width .25s ease-in-out, background-color .25s ease-in-out;
+  transition: width .25s ease-in-out, background-color .25s ease-in-out;
+  -webkit-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+  -o-box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+  box-shadow: rgba(0, 0, 0, .28) 0 2px 3px;
+  text-decoration: none;
+}
+
+#buttonbg span:hover {
+  visibility: hidden;
+}
+
+#buttonbg span {
+  display: block;
+  top: 15px;
+  position: absolute;
+  left: 90px;
+}
+
+#buttonbg .icon {
+  color: #fafafa;
+  overflow: hidden;
+}
+
+#buttonbg .fb {
+  background-color: rgba(45, 118, 185, .42);
+  background-position: 0 -382px;
+}
+
+#buttonbg .twit {
+  background-color: rgba(0, 161, 223, .42);
+  background-position: 0 -430px;
+}
+#buttonbg li:hover .icon {
+  width: 250px;
+}
+
+#buttonbg li:hover .icon {
+  background-color: #d91e76;
+}
+
+#buttonbg li:hover .fb {
+  background-color: #2d76b9;
+  background-position: 0 2px;
+}
+
+#buttonbg li:hover .twit {
+  background-color: #00A1DF;
+  background-position: 0 -46px;
+}
+#buttonbg .icon:active {
+  bottom: -2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}

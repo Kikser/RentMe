@@ -1,0 +1,9 @@
+﻿ .fc-event {
+  padding:1em 0.5em !important;
+}
+.fc-day-grid-event .fc-content {
+  white-space:normal !important;
+}
+.strikeout * {
+  text-decoration: line-through !important;
+}

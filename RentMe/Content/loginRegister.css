@@ -1,0 +1,125 @@
+﻿ a {
+        text-decoration: none;
+        color: #006aea;
+    }
+
+ a.designer {
+            position: absolute;
+            top: -30px;
+            left: 5px;
+            opacity: 0.35;
+        }
+
+.signup-wrap {
+        position: relative;
+        width: 55.5%;
+        padding: 40px 90px;
+        background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%,rgba(97, 210, 214, 1) 100%);
+        background-size: cover;
+        margin: 50px auto;
+        font-family: "Open Sans", sans-serif;
+        box-shadow: 0px 15px 40px 0px rgba(0, 42, 92, 0.75);
+    }
+
+@media screen and (max-width: 640px) {
+.signup-wrap {
+        width: 90%;
+        padding: 20px 10px;
+    }
+}
+
+.signup-wrap p {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.signup-wrap p.username:before {
+        background: none;
+    }
+
+.signup-wrap p:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 27px;
+        height: 20px;
+        background: url(http://i.imgur.com/9id0wlE.png) no-repeat;
+        top: -20px;
+        right: 34.5%;
+    }
+
+.signup-wrap p:nth-child(even):before {
+        left: 30%;
+    }
+
+.signup-wrap a.signup {
+    display: block;
+    background: url(http://i.imgur.com/gmcgMuX.png) no-repeat;
+    width: 178px;
+    max-width: 100%;
+    height: 66px;
+    margin: 0 auto;
+    margin-bottom: -16px;
+}
+
+.signup-wrap a.close {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: url(http://i.imgur.com/14LNl69.png) no-repeat;
+    top: 25px;
+    left: 30px;
+    text-indent: -99999px;
+}
+
+.signup-wrap input[type="text"], .signup-wrap input[type="password"], .button input[type="submit"] {
+    background: #65a5f0;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.signup-wrap input[type="text"]:focus, .signup-wrap input[type="password"]:focus, .button input[type="submit"]:focus {
+        outline: none;
+    }
+
+@media screen and (max-width: 640px) {
+  .signup-wrap input[type="text"], .signup-wrap input[type="password"], .button input[type="submit"] {
+        font-size: 12px;
+    }
+}
+
+.signup-wrap input[type="text"]::-webkit-input-placeholder, .signup-wrap input[type="password"]::-webkit-input-placeholder, .button input[type="submit"]::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.signup-wrap input[type="text"]:-moz-placeholder, .signup-wrap input[type="password"]:-moz-placeholder, .button input[type="submit"]:-moz-placeholder {
+    color: #fff;
+}
+
+.signup-wrap input[type="text"]::-moz-placeholder, .signup-wrap input[type="password"]::-moz-placeholder, .button input[type="submit"]::-moz-placeholder {
+    color: #fff;
+}
+
+.signup-wrap input[type="text"]:-ms-input-placeholder, .signup-wrap input[type="password"]:-ms-input-placeholder, .button input[type="submit"]:-ms-input-placeholder {
+    color: #fff;
+}
+
+.button input[type="submit"] {
+    background: #006aea;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+
+    .button input[type="submit"]:focus {
+        outline: none;
+    }
+
+    .button input[type="submit"]:hover {
+        background: green;
+    }

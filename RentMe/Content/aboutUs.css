@@ -1,0 +1,230 @@
+﻿.section {
+    width: 80%;
+    Margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 400px;
+}
+
+title {
+    font-family: Roboto Slab;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    display: block;
+    bottom: -20px;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    font-size: 0.8em;
+    font-family: Roboto Slab;
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+
+.slidertp {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(238, 238, 238, 1) 0%,rgba(97, 210, 214, 1) 100%);
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+    .slidertp title {
+        bottom:-14px;
+        color:rgba(97, 210, 214, 1);
+    }
+
+.sliderbt {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    bottom: 0px;
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%,rgba(97, 210, 214, 1) 100%);
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+    .sliderbt title {
+        top: -11px;
+        color:rgba(97, 210, 214, 1);
+    }
+
+section:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ccc;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+    section:hover .slidertp {
+        top: -50%;
+        transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    }
+
+    section:hover .sliderbt {
+        bottom: -50%;
+        transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    }
+
+.crossbt {
+    width: 0px;
+    height: 0px;
+    border-bottom: 170px solid rgb(150, 202, 45);
+    border-left: 230px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.crosstp {
+    width: 0px;
+    height: 0px;
+    border-top: 170px solid rgb(150, 202, 45);
+    border-right: 230px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+section:hover .crosstp {
+    right: 230px;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+section:hover .crossbt {
+    left: 230px;
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.crosstp title {
+    transform: rotate(-36deg);
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    position: absolute;
+    left: 50px;
+    width: 230px;
+    display: block;
+    top: -140px;
+}
+
+
+.slidertprd {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    overflow: hidden;
+    background: rgb(52, 60, 65);
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    border-bottom-right-radius: 0px;
+}
+
+section:hover .slidertprd {
+    border-bottom-right-radius: 100px;
+    left: -100%;
+    -moz-transition: all 0.5s linear;
+}
+
+section:hover .sliderbtrd {
+    border-top-right-radius: 200px;
+    left: -100%;
+    -moz-transition: all 0.5s linear;
+}
+
+
+
+
+.sliderbtrd {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(52, 60, 65);
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+    .sliderbtrd title {
+        top: -22px;
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .section {
+        width: 80%;
+        padding: 0px 50px;
+        text-align: center;
+    }
+}
