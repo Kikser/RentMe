@@ -8,11 +8,13 @@
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/footer.css" rel="stylesheet" />
 
+
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-             <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse">
                 <ul id="navigation">
                     <li class="home">@Html.ActionLink("Home", "Index", "Accommodation")</li>
                     <li class="about">@Html.ActionLink("Rent", "Rent", "Accommodation")</li>
@@ -25,15 +27,16 @@
         </div>
     </div>
     <div class="container body-content">
+        
         @RenderBody()
-       
+
     </div>
     <footer>
         <div class="footer">
             <div id="button"></div>
             <div id="container">
                 <div id="cont">
-
+                   
                 </div>
             </div>
         </div>

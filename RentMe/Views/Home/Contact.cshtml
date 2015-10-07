@@ -1,17 +1,96 @@
-﻿@{
+﻿@model RentMe.Models.EmailFormModel
+@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<link href="~/Content/contactUs.css" rel="stylesheet" />
+<div id='browser'>
+       <div id='contactUs'>
+        <div id='left'>
+            <div id='map'>
+                <p>Where To Find Us</p>
+                <div class='map-locator'>
+                    <div class='tooltip'>
+                        <ul>
+                            <li>
+                                <span class='entypo-location'></span>
+                                <span class='selectedLocation'>Macedonia</span>
+                            </li>
+                            <li>
+                                <span class='entypo-mail'></span>
+                                <a href='#'>kristijan@ncs.mk</a>
+                            </li>
+                            <li>
+                                <span class='entypo-phone'></span>
+                                (+389) 70 288 878
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='zoom'></div>
+            </div>
+            <ul id='location-bar'>
+                <li>
+                    <a class='location' data-location='Israel' href='http://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Macedonia</a>
+                </li>
+                <li>
+                    <a class='location' data-location='USA' href='http://f.cl.ly/items/0n0o01382l0p1u271D43/usa.png'>USA</a>
+                </li>
+                <li>
+                    <a class='location' data-location='The Netherlands' href='http://f.cl.ly/items/0g0l283X3h1T3H270V0A/netherlands.png'>The Netherlands</a>
+                </li>
+                <li>
+                    <a class='location' data-location='Singapore' href='http://f.cl.ly/items/1i2Y262H020X141R3h0k/singapore.png'>Singapore</a>
+                </li>
+            </ul>
+        </div>
+        <div id='right'>
+            <p>Connect</p>
+            <div id='social'>
+                <a class='social'>
+                    <span class='entypo-facebook'></span>
+                </a>
+                <a class='social'>
+                    <span class='entypo-twitter'></span>
+                </a>
+                <a class='social'>
+                    <span class='entypo-linkedin'></span>
+                </a>
+                <a class='social'>
+                    <span class='entypo-gplus'></span>
+                </a>
+                <a class='social'>
+                    <span class='entypo-instagrem'></span>
+                </a>
+            </div>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                        @Html.TextBoxFor(m => m.FromName, new { @class = "form-control", @placeholder="Your Name" })
+                        @Html.ValidationMessageFor(m => m.FromName)
+                    
+            
+                        @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", @placeholder = "Your Email" })
+                        @Html.ValidationMessageFor(m => m.FromEmail)
+              
+               
+                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @placeholder = "Message" })
+                        @Html.ValidationMessageFor(m => m.Message)
+         
+              
+                    <input placeholder='Send' type='submit'>
+              
+            }
+            
+            <p>other way</p>
+            <p class='other entypo-mail'>
+                <a href='#'>kristijan@ncs.mk</a>
+            </p>
+            <p class='other entypo-phone'>(+389) 70 288 878</p>
+        </div>
+    </div>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="~/Scripts/contactUs.js"></script>

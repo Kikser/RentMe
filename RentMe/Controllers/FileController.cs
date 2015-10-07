@@ -10,8 +10,6 @@ namespace RentMe.Controllers
     public class FileController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
-        //private RentMeDBContext db = new RentMeDBContext();
         // GET: File
         public ActionResult Index(int id)
         {

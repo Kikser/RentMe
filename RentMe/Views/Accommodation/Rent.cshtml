@@ -6,9 +6,7 @@
 <link href="~/Content/item.css" rel="stylesheet" />
 <link href="~/Content/effects.css" rel="stylesheet" />
 <link href="~/Content/uploadForm.css" rel="stylesheet" />
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <div class="apartment_wrapper">
     @foreach (var item in Model)
     {
@@ -37,31 +35,13 @@
                         @Html.DisplayFor(modelItem => item.City), @Html.DisplayFor(modelItem => item.PostalCode)
                         <div class="features">
                             <span class="area">@Html.DisplayFor(modelItem => item.Types)</span>
-                            <span class="bath">2</span>
-                            <span class="bed">2</span>
+                            <span class="bed">@Html.ActionLink(@item.Name, "Details", new { id = item.Id })</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @*@Html.DisplayFor(modelItem => item.Name)
-
-            @Html.DisplayFor(modelItem => item.Price)
-
-            @Html.DisplayFor(modelItem => item.StreetAddress)
-
-            @Html.DisplayFor(modelItem => item.City)
-
-            @Html.DisplayFor(modelItem => item.PostalCode)
-
-            @Html.DisplayFor(modelItem => item.RentSale)
-
-            @Html.DisplayFor(modelItem => item.Types)*@
-
-        @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
-
+       
     }
 
 </div>

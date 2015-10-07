@@ -10,7 +10,6 @@ namespace RentMe.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "RentMe.Models.ApplicationDbContext";
         }
 
         protected override void Seed(RentMe.Models.ApplicationDbContext context)

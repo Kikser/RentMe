@@ -13,7 +13,7 @@ namespace RentMe.Controllers
 {
     public class ImagesController : Controller
     {
-        private RentMeDBContext db = new RentMeDBContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Images
         public ActionResult Index()

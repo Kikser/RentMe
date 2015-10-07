@@ -11,14 +11,15 @@ using RentMe.Models.Entities;
 using System.Data.Entity.Infrastructure;
 using Microsoft.AspNet.Identity;
 using RentMe.Models.Enums;
+using System.Net;
+using System.Net.Mail;
+using System.Threading.Tasks;
 
 namespace RentMe.Controllers
 {
     public class AccommodationController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
-
-        // private RentMeDBContext db = new RentMeDBContext();
 
         // GET: Accommodation
         public ActionResult Index()
@@ -33,7 +34,7 @@ namespace RentMe.Controllers
         }
         public ActionResult Sale()
         {
-             var Accommodations = db.Accommodations.Where(t => t.RentSale == RentSale.Sale).ToList();
+            var Accommodations = db.Accommodations.Where(t => t.RentSale == RentSale.Sale).ToList();
             ViewBag.Message = "Your contact page.";
             return View(Accommodations);
         }
@@ -46,7 +47,7 @@ namespace RentMe.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Accommodation accommodation = db.Accommodations.Include(s => s.Images).SingleOrDefault(s => s.Id == id);
-           
+
             if (accommodation == null)
             {
                 return HttpNotFound();
@@ -65,7 +66,7 @@ namespace RentMe.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Price,StreetAddress,City,PostalCode,imageName")] Accommodation accommodation, HttpPostedFileBase upload)
+        public ActionResult Create([Bind(Include = "Id,Name,Price,StreetAddress,City,PostalCode,imageName,Types,RentSale")] Accommodation accommodation, HttpPostedFileBase upload)
         {
             try
             {
@@ -85,6 +86,7 @@ namespace RentMe.Controllers
                         }
                         accommodation.Images = new List<Image> { avatar };
                     }
+
                     string currentUserId = User.Identity.GetUserId();
                     accommodation.ApplicationUser = db.Users.FirstOrDefault(x => x.Id == currentUserId);/*db.Users.FirstOrDefault(x => x.Id == currentUserId);*/
                     db.Accommodations.Add(accommodation);
@@ -101,6 +103,11 @@ namespace RentMe.Controllers
             return View(accommodation);
         }
 
+       
+        public ActionResult Sent()
+        {
+            return View();
+        }
         // GET: Accommodation/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -166,5 +173,7 @@ namespace RentMe.Controllers
             }
             base.Dispose(disposing);
         }
+
+        
     }
 }

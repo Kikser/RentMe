@@ -21,6 +21,7 @@ namespace RentMe.Models.Entities
         public AccommodationType Types { get; set; }
         public virtual ApplicationUser ApplicationUser { get; set; }
         public virtual ICollection<Image> Images { get; set; }
+        public virtual ICollection<Rent> Rents { get; set; }
 
     }
 }
