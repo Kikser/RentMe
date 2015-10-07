@@ -22,10 +22,6 @@ namespace RentMe.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Accommodation
-        /// <summary>
-        /// Indexes this instance.
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Index()
         {
             return View(db.Accommodations.ToList());
